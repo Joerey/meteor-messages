@@ -6,7 +6,7 @@ var messages = [{
   type: "Dribbble",
   body: "You would think that after such a warm day I could... Fusce tincidunt, urna rutrum imperdiet euismod, tellus lectus, vitae eleifend felis urna id augue. Aliquam vestibulum consectetur nunc ac mollis. Curabitur et mauris urna, vel lobortis nisi. Etiam orci sapien, sagittis ac laoreet et, fringilla vel lectus. Curabitur ac ante eget lacus volutpat rhoncus. Duis sollicitudin diam sed velit fringilla consectetur. Praesent luctus egesatas nulla, non blandit arcu faucibus sed. Donec magna neque, venenatis quis volutpat tristique, pharetra aipsum. Quisque intredum leo vel auque congue aliquam. Vivamus sed nisl sapien, et pretium mi. Phasellus mi nunc, ultrices id placerat sit amet, pulvinar id celit. Nunc sed dicctum libero. Nullam lacinia consectetur lectus eget interdum. Mauris in nisi at quam hendrerit vulputate vel sit amet risus. Duis luctus porttitor metus vitae tempus.",
 },{
-  name: "Eric Hoffman",
+  name: "Bob",
   title: "Trendable is available",
   time: "14:22",
   avatar: "http://api.randomuser.me/0.3.1/portraits/men/6.jpg",
