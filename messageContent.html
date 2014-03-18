@@ -1,0 +1,37 @@
+
+<template name="messageContent">
+  <div id="right">
+    {{#with message}}
+      {{> detail}}
+      {{> text}}
+    {{/with}}
+
+    {{> messageBottom}}
+  </div>
+</template>
+
+<template name="detail">
+  <div class="information">
+    <h2 class="title">{{title}}</h2>
+    <div><a href="asdfasdf.com">{{name}}</a> to me</div>
+  </div>
+</template>
+
+<template name="text">     
+  <div class="text">{{body}}</div>
+</template>
+
+
+<template name="messageBottom">     
+  <div class="bottom">
+    <div class="button" id="CITYGUIDE">CITYGUIDE.PDF</div>
+    <div class="button" id="SF">SF.MP3</div>
+
+    <div class="DOWNLOAD">
+      <div class="button" id="DOWNLOAD">DOWNLOAD</div>
+    </div>
+  </div>
+</template>
+
+
+

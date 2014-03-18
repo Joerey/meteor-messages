@@ -1,0 +1,84 @@
+<template name="project2">
+  <div id="frontPage">
+
+    <div id="top">
+      <p>Mikael Eidenberg<p>
+    </div>
+    
+    {{> sideMenu}}
+    {{> messageList}}
+    {{> messageContent}}
+    
+    {{#if showForm}}
+    {{> inputMessage}}
+    {{/if}}
+
+      
+  </div>
+    
+    
+</template>
+
+<template name="sideMenu">
+  <div id="left">
+    <div class="button">compose</div>
+    <ul class="inbox">
+      <li>Inbox</li>
+      <li>Dearest</li>
+      <li>Sent</li>
+      <li>Drafts</li>
+      <li>Trash</li>
+    </ul>
+  
+    <ul class="typesMenu">
+      <li data-type="Work"><div class="square Work"></div>Work</li>
+      <li data-type="Dribbble"><div class="square Dribbble"></div>Dribbble</li>
+      <li data-type="Personal"><div class="square Personal"></div>Personal</li>
+      <li data-type="Illustrators"><div class="square Illustrators"></div>Illustrators</li>
+    </ul>
+  </div>  
+</template>
+
+<template name="messageList">
+  <div id="content">
+    {{#each messages}}
+      {{> message}}
+    {{/each}}
+    
+  </div>
+</template>
+
+<template name="message">
+  <div class="block">
+    <div class="photo">
+      <img src="{{avatar}}"/>
+    </div>
+        
+    <div>
+      <div class="time">{{time}}</div>
+      <p class="author">{{name}}</p>
+      <div class="square {{type}} small"></div>
+      <div>{{title}}</div>
+      <p class="message">{{body}}</p>
+    </div> 
+  </div>
+</template>
+
+
+
+<template name="inputMessage">
+  <form name="inputtext">
+  name: <input type="text" name="name"><br>
+  title: <input type="text" name="title"><br>
+  type: <input type="text" name="type"><br>
+  body: <textarea name ="body" cols="40" rows="5" ></textarea><br>
+  </form>
+
+ <div class="add">add</div>
+ </template>
+
+
+
+
+
+
