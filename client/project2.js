@@ -123,17 +123,7 @@ Session.set('messages', messages);
 
 Session.set('messageIndex', 1)
 
-Template.sideMenu.events({
-  'click .button':function (){
-    Session.set('showForm', true)
-    
-  }
-})  
-  
 
-Template.project2.showForm = function(){
-  return Session.get('showForm');
-};
 
 
 
